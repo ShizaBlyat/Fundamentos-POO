@@ -1,0 +1,15 @@
+/**
+* UPTx - Fundamentos de Programacion Orientada a Objetos
+* Practica No. 1                 Grupo 5H
+* Objetivo: Mostrar un mensaje de bienvenida
+* Integrantes: Cesar Eyddel Escobedo Ram¡rez, Alan Tlalpa S nchez , Miriam Mej¡a Rojas, Missael Ortiz Flores
+*/
+
+public class Main {
+    public static void main(String[] args) {
+        //realizar la practica del primer programa que diga "hola mundo" o saludar
+//Mensaje
+        System.out.printf("Hola Mundo uwu");
+    }
+}
+
