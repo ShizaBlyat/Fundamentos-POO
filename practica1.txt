@@ -1,8 +1,8 @@
 /**
 * UPTx - Fundamentos de Programacion Orientada a Objetos
-* Practica No. 1                 Grupo 5H
+* Practica No. 1      Grupo 5H
 * Objetivo: Mostrar un mensaje de bienvenida
-* Integrantes: Cesar Eyddel Escobedo Ram¡rez, Alan Tlalpa S nchez , Miriam Mej¡a Rojas, Missael Ortiz Flores
+* Integrantes: Cesar Eyddel Escobedo Ramirez, Alan Tlalpa Sanchez , Miriam Mejia Rojas, Missael Ortiz Flores
 */
 
 public class Main {
@@ -12,4 +12,3 @@ public class Main {
         System.out.printf("Hola Mundo uwu");
     }
 }
-
