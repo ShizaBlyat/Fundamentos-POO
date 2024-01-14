@@ -1,0 +1,45 @@
+/**
+ * UPTx - Fundamentos de Programacion Orientada a Objetos
+ * Practica No. 3      Grupo 5H
+ * Objetivo: Documentacion de codigo
+ * Alumno: Cesar Eyddel Escobedo Ramirez
+ */
+import java.util.Scanner; //Libreria para funcion scanner (leer entrada de teclado)
+public class Main {
+    public static void main(String[] args) {
+        //Declaracion de variablex
+        int numint; //Variable tipo ENTERO
+        double numdbl,res1,res2,res3,res4,res5,res6; //Variables tipo DECIMAL (REAL)
+        //Mensaje de bienvenida
+        System.out.print("Bienvenido, por favor sigue las instrucciones\n");
+        //Funcion que permite leer datos ingresados por el usuario en la consola
+        Scanner scanner = new Scanner(System.in);
+        //Funcion que permite mostrar un mensaje
+        System.out.printf("\nDigite un numero entero:");
+        //Se lee el valor y lo guarda en la variable ENTERA "numint"
+        numint=scanner.nextInt();
+        //Funcion que permite mostrar un mensaje
+        System.out.printf("\nDigite un numero decimal:");
+        //Se lee el valor y lo guarda en la variable REAL "numdbl"
+        numdbl=scanner.nextDouble();
+        //1. Se realiza la SUMA de un numero REAL y uno ENTERO, se guarda en "res1"
+        res1=numdbl+numint;
+        //2. Se realiza la DIV. entre un numero ENTERO y uno (ENTERO) REAL, se guarda en "res2"
+        res2=numint/(int)numdbl;
+        //3. Se realiza la DIV. entre un numero ENTERO y uno REAL, se guarda en "res3"
+        res3=numint/numdbl;
+        //4. Se realiza la DIV. entre un numero REAL y uno ENTERO, se guarda en "res4"
+        res4=numdbl/numint;
+        //5. Se realiza la DIV. entre un numero (ENTERO) REAL y uno ENTERO, se guarda en "res5"
+        res5=(int)numdbl/numint;
+        //6. Se realiza la SUMA de un numero (ENTERO) REAL y uno ENTERO, se guarda en "res6"
+        res6=(int)numdbl+numint;
+        //Se muestran los resultados de las operaciones en orden de una por una
+        System.out.printf("\nEl valor de la operacion es:"+res1);
+        System.out.printf("\nEl valor de la operacion es:"+res2);
+        System.out.printf("\nEl valor de la operacion es:"+res3);
+        System.out.printf("\nEl valor de la operacion es:"+res4);
+        System.out.printf("\nEl valor de la operacion es:"+res5);
+        System.out.printf("\nEl valor de la operacion es:"+res6);
+    }
+}
