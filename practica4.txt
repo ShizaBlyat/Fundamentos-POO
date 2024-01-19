@@ -1,0 +1,100 @@
+/**
+ * UPTx - Fundamentos de Programacion Orientada a Objetos
+ * Practica No. 4      Grupo 5H
+ * Objetivo: Realizar una aplicacion donde se realicen los registros de un coche para establecer su mantenimiento de gas y km recorrido
+ * Integrantes: Cesar Eyddel Escobedo Ramirez, Alan Tlalpa Sanchez , Miriam Mejia Rojas, Missael Ortiz Flores
+ */
+
+//Clase Carro (SubPrograma)
+class Carro {
+    private String marca;
+    private String modelo;
+    private int anio;
+    private double kilometraje;
+    private double combustible;
+    private boolean mantenimiento;
+
+    public Carro(String marca, String modelo, int anio, double kilometraje, double combustible, boolean mantenimiento) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.anio = anio;
+        this.kilometraje = kilometraje;
+        this.combustible = combustible;
+        this.mantenimiento = mantenimiento;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public int getAnio() {
+        return anio;
+    }
+
+    public double getKilometraje() {
+        return kilometraje;
+    }
+
+    public void setKilometraje(double kilometraje) {
+        this.kilometraje = kilometraje;
+    }
+
+    public double getCombustible() {
+        return combustible;
+    }
+
+    public void setCombustible(double combustible) {
+        this.combustible = combustible;
+    }
+
+    public boolean getMantenimiento() {
+        return mantenimiento;
+    }
+
+    public void setMantenimiento(boolean mantenimiento) {
+        this.mantenimiento = mantenimiento;
+    }
+}
+
+//Clase Principal (Main)
+public class Main {
+    public static void main(String[] args) {
+        Carro carro1 = new Carro("Toyota", "Corolla", 2022, 10000.0, 50.0, true);
+        Carro carro2 = new Carro("Honda", "Civic", 2021, 20000.0, 40.0, false);
+        Carro carro3 = new Carro("Ford", "Mustang", 2020, 30000.0, 30.0, true);
+
+        //Se actualizan 3 atributos diferentes para cada carro
+        carro1.setKilometraje(15000.0);
+        carro2.setCombustible(45.0);
+        carro3.setMantenimiento(false);
+
+//Muestra en consola los atributos del Carro No. 1
+        System.out.println("Carro 1:");
+        System.out.println("Marca: " + carro1.getMarca());
+        System.out.println("Modelo: " + carro1.getModelo());
+        System.out.println("Año: " + carro1.getAnio());
+        System.out.println("Kilometraje: " + carro1.getKilometraje());
+        System.out.println("Combustible: " + carro1.getCombustible());
+        System.out.println("Mantenimiento: " + carro1.getMantenimiento());
+//Muestra en consola los atributos del Carro No. 2
+        System.out.println("\nCarro 2:");
+        System.out.println("Marca: " + carro2.getMarca());
+        System.out.println("Modelo: " + carro2.getModelo());
+        System.out.println("Año: " + carro2.getAnio());
+        System.out.println("Kilometraje: " + carro2.getKilometraje());
+        System.out.println("Combustible: " + carro2.getCombustible());
+        System.out.println("Mantenimiento: " + carro2.getMantenimiento());
+//Muestra en consola los atributos del Carro No. 3
+        System.out.println("\nCarro 3:");
+        System.out.println("Marca: " + carro3.getMarca());
+        System.out.println("Modelo: " + carro3.getModelo());
+        System.out.println("Año: " + carro3.getAnio());
+        System.out.println("Kilometraje: " + carro3.getKilometraje());
+        System.out.println("Combustible: " + carro3.getCombustible());
+        System.out.println("Mantenimiento: " + carro3.getMantenimiento());
+    }
+}
