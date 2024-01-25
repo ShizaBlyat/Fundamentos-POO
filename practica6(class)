@@ -1,0 +1,40 @@
+package conversion;
+
+public class conversion {
+    private double celsius;
+    private double fahrenheit;
+// Constructor No. 1 Inicializa las variables celsius y fahrenheit a 0
+    public conversion() {
+        celsius = 0;
+        fahrenheit = 0;
+    }
+// Constructor No. 2 Es sobrecargado de la clase conversion. Inicializa las variables celsius y fahrenheit
+    public conversion(double celsius, double fahrenheit) {
+        this.celsius = celsius;
+        this.fahrenheit = fahrenheit;
+    }
+// Get & Set de celsius y fahrenheit
+    public double getCelsius() {
+        return celsius;
+    }
+
+    public void setCelsius(double celsius) {
+        this.celsius = celsius;
+    }
+
+    public double getFahrenheit() {
+        return fahrenheit;
+    }
+
+    public void setFahrenheit(double fahrenheit) {
+        this.fahrenheit = fahrenheit;
+    }
+// Formula que convierte la temperatura en grados Celsius a grados Fahrenheit y devuelve el resultado
+    public double celsiusToFahrenheit() {
+        return celsius * 1.8 + 32;
+    }
+// Formula que convierte la temperatura en grados Fahrenheit a grados Celsius y devuelve el resultado
+    public double fahrenheitToCelsius() {
+        return (fahrenheit - 32) / 1.8;
+    }
+}
