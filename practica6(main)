@@ -1,0 +1,25 @@
+/**
+ * UPTx - Fundamentos de Programacion Orientada a Objetos
+ * Practica No. 6      Grupo 5H
+ * Objetivo: Realizar el código de la clase Temperatura de acuerdo al diagrama UML de clase.
+ * Alumno: Cesar Eyddel Escobedo Ramirez
+ */
+import conversion.*;
+public class Main {
+    public static void main(String[] args) {
+        // Crear un objeto de la clase conversion
+        conversion convTemp = new conversion();
+
+        // Establecer los valores de celsius y fahrenheit
+        convTemp.setCelsius(100);
+        convTemp.setFahrenheit(212);
+
+        // Realizar la conversión de Celsius a Fahrenheit y mostrar el resultado
+        double fahrenheit = convTemp.celsiusToFahrenheit();
+        System.out.println(convTemp.getCelsius() + " grados Celsius a grados Fahrenheit son " + fahrenheit);
+
+        // Realizar la conversión de Fahrenheit a Celsius y mostrar el resultado
+        double celsius = convTemp.fahrenheitToCelsius();
+        System.out.println(convTemp.getFahrenheit()+" grados Fahrenheit a grados Celsius son " +celsius);
+    }
+}
