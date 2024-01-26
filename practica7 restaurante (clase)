@@ -1,15 +1,12 @@
 package restaurante;
-
 public class restaurante{
     private int huevos;
     private double chorizo;
-
     public restaurante(int numDocenas, double kilosChorizo) {
         this.huevos = numDocenas * 12;
         this.chorizo = kilosChorizo;
     }
-//metodos
-    //toma un argumento numDocenas y agrega el número correspondiente de docenas de huevos a la variable de instancia huevos
+//toma un argumento numDocenas y agrega el número correspondiente de docenas de huevos a la variable de instancia huevos
     public void addHuevos(int numDocenas) {
         this.huevos += numDocenas * 12;
     }
