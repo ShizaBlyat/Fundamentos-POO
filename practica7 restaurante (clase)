@@ -1,0 +1,48 @@
+package restaurante;
+
+public class restaurante{
+    private int huevos;
+    private double chorizo;
+
+    public restaurante(int numDocenas, double kilosChorizo) {
+        this.huevos = numDocenas * 12;
+        this.chorizo = kilosChorizo;
+    }
+//metodos
+    //toma un argumento numDocenas y agrega el número correspondiente de docenas de huevos a la variable de instancia huevos
+    public void addHuevos(int numDocenas) {
+        this.huevos += numDocenas * 12;
+    }
+    //toma un argumento kilosChorizo y agrega la cantidad correspondiente de kilos de chorizo a la variable de instancia chorizo
+    public void addChorizo(double kilosChorizo) {
+        this.chorizo += kilosChorizo;
+    }
+//no toma argumentos y devuelve el número de platos de huevos con chorizo que se pueden ofrecer
+    public int getNumPlatos() {
+        int numHuevos = this.huevos;
+        double numChorizo = this.chorizo * 1000;
+        int numPlatos = 0;
+        while (numHuevos >= 2 && numChorizo >= 200) {
+            // Se tiene en cuenta que cada plato necesita una media de 2 huevos y 200 gramos de chorizo
+            numHuevos -= 2;
+            numChorizo -= 200;
+            numPlatos++;
+        }
+        return numPlatos;
+    }
+//disminuye el número de huevos y de kilos de chorizo porque se ha servido un plato (2 huevos menos y 200 gramos de chorizo menos)
+    public void sirvePlato() {
+        if (this.huevos >= 2 && this.chorizo >= 0.2) {
+            this.huevos -= 2;
+            this.chorizo -= 0.2;
+        }
+    }
+//devuelve el número de huevos (no de docenas) que quedan en la cámara
+    public int getHuevos() {
+        return this.huevos;
+    }
+//devuelve el número de kilos de chorizo que quedan en la cámara
+    public double getChorizo() {
+        return this.chorizo;
+    }
+}
